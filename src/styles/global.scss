@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5fff5;
+    color: #00AA00;
+  }
+  
+  .app-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .calculate-btn {
+    background-color: #00AA00;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:disabled{
+        cursor: not-allowed;
+        background-color: #DCDCDC;
+    }
+  }
+  
+  .calculate-btn:hover {
+    background-color: #00AA00;
+  }
+  
+
+  .toggle-container {
+    margin: 20px 0;
+  }
+  
+  .days-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  
+    label {
+      display: inline-block;
+      cursor: pointer;
+      color: #52575C;
+    }
+  
+    input {
+      margin-right: 5px;
+    }
+  }
+  
+
+  .day-box-container {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    justify-content: center;
+  }
+  
+  .day-box {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s ease-in-out;
+    color: #555;
+    background-color: transparent;
+  }
+  
+  .day-box.selected {
+    background-color: #00AA00;
+    color: #fff;
+    border-color: #00AA00;
+  }
+  
